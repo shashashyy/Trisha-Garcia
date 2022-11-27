@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head> 
+<body>
+
+<div class="background">
+
+    <div class="nav">
+    <a class="a active" href="#">HOME</a>
+    <a class="b" href="#">ABOUT ME</a>
+    <a class="c" href="#">CONTACT ME</a>
+</div>
+
+<div class="content">
+
+    <div class="home">
+        <h1> I am Trisha Garcia</h1>
+        <h3> 2E2 - Business Economics</h3>
+    </div>
+
+    <div class="aboutus">
+        <br>
+        <br>
+        <br>
+        <p><b>HELLO!</b><br>
+        I am Trisha Garcia. I am 19 years old and a second-year student majoring in business economics. I am from Cagayan Valley and currently living with my parents, two sisters, and four dogs. I am the youngest in the family. I finished Senior High at Camalaniugan National High School in 2021 and was awarded High Honors.<p>I consider myself an introvert and a homebody since I prefer to stay home during my breaks and free time. In my free time, I enjoy watching Korean series and variety shows, reading books, listening to music, and scrolling through various social media accounts. I also play online games such as call of duty mobile and hayday.</p> 
+        <p> Now that I am in my second year at UST, I am a part of two organizations, namely Rotaract Club of UST - Central Chapter and Tomcat - UST, as a protégé in the Logistics Department and apprentice in the Marketing and Sponsorships Department, respectively. I joined these two organizations to challenge myself and discover more about my skills, capabilities, passions, and talents.</p>
+
+    </div>
+    </div>
+</div>
+</div>
+
+<div class="contact">
+    <div class="contactform">
+        <form action="" methods="post">
+            <input type="text" name="" class="inputtext" value="First Name">
+            <input type="text" name="" class="inputtext" value="Last Name">
+            <input type="text" name="" class="inputtext" value="Your Email">
+            <textarea cols="4" rows="6" class="inputtext">Your Message
+            </textarea>
+            <input type="button" names="" class="submitbutton" value="Submit">
+        </form>
+    </div>
+</div>
+</div>
+
+</div>
+
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript"> 
+
+      $(document).ready(function(){
+        $('a').click(function(){
+            //alert("i am click");
+            var selected = $(this);
+            $('a').removeClass('active');
+            $(selected).addClass('active');
+        });
+
+        var $a = $('.a'),
+        $b = $('.b'),
+        $c = $('.c'),
+        $home = $('.home'),
+        $aboutus = $('.aboutus');
+        $contact = $('.contact'),
+
+        $a.click(function(){
+            $home.fadeIn();
+            $aboutus.fadeOut();
+            $contact.fadeOut();
+        });
+        $b.click(function(){
+            $aboutus.fadeIn();
+            $home.fadeOut();
+            $contact.fadeOut();
+        });
+        $c.click(function(){
+            $contact.fadeIn();
+            $home.fadeOut();
+            $aboutus.fadeOut();
+         
+        });
+        
+    });
+</script>
+</body>
+</html>

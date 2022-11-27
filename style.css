@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: normal; 
+}
+.background{
+    width: 100%;
+    height: 100%;
+    background-image: url(../ELEC/bg3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-y: auto;
+
+}
+.nav{
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 0;
+
+}
+.nav a{
+    text-decoration: none;
+    font-size: 28px;
+    font-family: verdana;
+    font-weight: bold;
+    height: 98px;
+    margin: 5px 0;
+    float: left;
+    display: inline-block;
+    background-color: #105652;
+    color: white;
+    line-height: 98px;
+    text-align: center;
+    transition: 300ms;
+
+}
+
+a, .nav a:hover{
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+.a{
+    width: 90%;
+}
+.b{
+    width: 80%;
+}
+.c{
+    width: 85%;
+}
+
+.content{
+    position: absolute;
+    width: 900px;
+    min-height: 500px;
+    height: auto;
+    /*background-color: red;*/
+    right: 0;
+    top: 10%;
+}
+.home{
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    color: white;
+    font-family: verdanda;
+}
+.home h1{
+    font-size: 70px;
+    padding-right: 85px;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+}
+.home h3{
+    font-size: 28px;
+    padding: 5px 0;
+    opacity: 0.6;
+}
+
+.aboutus{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: white;
+    font-family: century gothic;
+    padding: 0 60px;
+    display: none;
+}
+.aboutus p{
+    font-size: 17px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+
+.contact{
+    position: absolute;
+    right: 0;
+    top: 120px;
+    color: white;
+    padding: 0 60px;
+    display: none;
+}
+.inputtext{
+    width: 55%;
+    height: 65px;
+    border: 3px solid #105652;
+    color: white;
+    background-color:  rgba(0, 139, 139, 0.171);
+    font-size: 20px;
+    padding: 0 10px;
+    float: left;
+    margin-bottom: 15px;
+}
+.inputmessage{
+    width: 55%;
+    height: 65px;
+    border: 3px #105652;
+    color: white;
+    background-color: rgba(0, 139, 139, 0.2670.171);
+    font-size: 20px;
+    padding: 0 10px;
+    float: left;
+
+}
+.submitbutton{
+    width: 140px;
+    height: 30px;
+    border: 3px white;
+    font-family: arial;
+    background-color: #105652;
+    color: white;
+    font-size: 25px;
+    border-spacing: none;
+    font-weight: bold;
+    float: left;
+    clear: both;
+    margin-top: 25px;
+
+}
